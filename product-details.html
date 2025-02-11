@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Landing_page/leaves-3.png" type="Image/ico">
+    <link rel="stylesheet" href="style.css">
+    <title>IQBAR® Peanut Butter Chip bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+<style>
+    
+    .container{
+        margin:0 20px ; 
+        max-width: 100%;
+        background-color: white;
+        border-radius: 24px;
+        padding: 30px;
+        box-shadow: 0 4px 6px rgba(0, 0,0, 0.1);
+    }
+    
+    .main-contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .main-image{
+        border-radius: 16px;
+        object-fit: cover;
+        width: 75%;
+        margin-left:60px;
+    
+        
+    }
+
+    .product-info{
+        background-color: white;
+    }
+    .product-info h1{
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    .product-info p{
+        color:#666;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .size{
+        padding:4px;
+        border:1px solid ;
+        border-radius: 40px;
+        background: none;
+        width: 8%;
+        text-align: center;
+
+    }
+    .price{
+        font-size: 32px;
+        font-weight: bold;
+        margin: 20px 0;
+        color: #f59138;
+    }
+    .add-to-cart{
+        background-color:#0f7432;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 70%;
+    }
+    .add-to-cart:hover{
+        transform: scale(1.05);
+    }
+    .add-to-cart:active{
+     background-color: black;        
+    }
+    .thumbnails{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap:5px;
+        margin: 20px 70px 0;
+    
+    }
+    
+        .thumbnail {
+            width: 100px;
+            height: 100px;
+            border-radius: 8px;
+            cursor: pointer;
+            object-fit: cover;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+           
+    
+    
+    .thumbnail img{
+        width:100%;
+        height: auto;
+    }
+
+    
+         .thumbnail:hover{
+            transform: scale(1.05);
+            opacity: 0.8;
+
+         }
+        .thumbnail:active {
+            border-color: #0f7432;
+        }
+
+        
+        
+ .product-options {
+    
+    padding: 8px 0;
+ }
+
+.flavor-title {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 500;
+   }
+
+.flavor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.flavor-radio {
+    display: none;
+}
+
+
+.flavor-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    border: 2px solid #e0e0e0;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.flavor-label:hover {
+    border-color:transparent;
+    transform: translateY(-4px);
+}
+
+.flavor-radio:checked + .flavor-label {
+    border-color: #0f7432;
+    
+}
+
+.flavor-image {
+    width: 70px;
+    height: 50px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+
+.flavor-name {
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+    line-height: 1.2;
+}
+.flavor-name a{
+    text-decoration: none;
+    color: #333;
+}
+ .faq-container{
+    width: 100%;
+ }
+.faq-container h1{
+    font-family: "Calistoga", serif;
+}  
+
+table{ 
+    margin-top:90px ;  
+    margin-left:70px; 
+    width: 70%;
+    height: 440PX;
+    border :2px #0f7432 dashed;
+    }
+    td ,th{
+        border-style: none;
+        text-align: center;
+        padding:10PX 
+
+    }
+    .us{
+        background-color: #D2E2A3;
+    }
+    
+        
+        
+</style>
+
+    
+            
+</head>
+<body> 
+    <header class="header">
+        <h1>good bites</h1>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="products.html" class="nav-link">Shop</a>
+            <a href="Contact-us.html" class="nav-link">Contact</a>
+            <a href="index.html#about-us" class="nav-link">About us</a>
+        </nav>
+        <div ><a href="cart.html"><img style="width: 30px;height: 30px;" src="Landing_page/cart-1.png"></a></div>
+    </header>
+    <main class="container">
+           <div class="main-contact"> 
+             <div >
+             <img src="products/Peanutbutter_chips.jpeg" alt="Main Product Image" id="mainImage" class="main-image">
+            
+                <div  class="thumbnails">
+                    <img src="products/Peanutbutter_chips.jpeg" alt="Thumbnail 1" class="thumbnail active" onclick="changeImage(this, 'products/Peanutbutter_chips.jpeg')">
+                    <img src="products/Peanutbutter_chips2.jpeg" alt="Thumbnail 2" class="thumbnail" onclick="changeImage(this, 'products/Peanutbutter_chips2.jpeg')">
+                    <img src="products/IQBARPeanutButterChipProteinBar_4.jpg" alt="Thumbnail 3" class="thumbnail" onclick="changeImage(this, 'products/IQBARPeanutButterChipProteinBar_4.jpg')">
+                    <img src="products/IQBARPeanutButterChipProteinBar_7.jpg" alt="Thumbnail 4" class="thumbnail" onclick="changeImage(this, 'products/IQBARPeanutButterChipProteinBar_7.jpg')">
+                </div>
+                
+             </div>  
+             <div class="product-info">
+                <h4><a style="color:#666 ;" href="products.html">IQBAR®</a></h4>
+                <h1>Peanut Butter Chip Plant Protein Bar</h1>
+                <p>IQBAR® Peanut Butter Chip bar is like a rich peanut butter chocolate chip cookie...that's healthy! This delicious combination of flavors will remind you of a childhood snack and will keep you coming back for more.
+                    <h4 style="background-color: #d1cdcd; width: 200px;">Best before: April 02, 2025 </h4></p>
+                <div class="price">3$</div>
+                <p><b>Spoiler alert:</b> They’re delicious, clean label, packed with protein and brain nutrients, and ultra low-sugar</p>
+                <div class="size">45g</div>
+                <div class="product-options">
+                    <h3 class="flavor-title">Select Flavor :</h3>
+                    
+                    <div class="flavor-grid">
+                        
+                        <input type="radio" name="flavor" id="peanut butter" class="flavor-radio" checked>
+                        <label for="Peanut butter" class="flavor-label">
+                            <img src="products/Peanutbutter_chips.jpeg" alt="" class="flavor-image">
+                            <span class="flavor-name">Peanut butter</span>
+                            
+                            
+                        </label>
+                        <input type="radio" name="flavor" id="Chocolate_Sea_Salt" class="flavor-radio">
+                        <label for="Chocolate_Sea_Salt" class="flavor-label">
+                            <img src="products/Chocolate_Sea_Salt1.jpeg" alt="" class="flavor-image">
+                            <span class="flavor-name"><a href="product-details-2.html">Chocolate Sea Salt</span> 
+                        </label></a>
+                        
+                        <input type="radio" name="flavor" id="Wild blueberry" class="flavor-radio" >
+                        <label for="Wild blueberry" class="flavor-label">
+                            <img src="products/Wild_blueberry .jpeg" alt="" class="flavor-image">
+                            <span class="flavor-name">Wild blueberry</span> 
+                        </label>
+                        <input type="radio" name="flavor" id="Almond_Butter_Chip" class="flavor-radio" >
+                        <label for="Almond_Butter_Chip" class="flavor-label">
+                            <img src="products/Almond_Butter_Chip.jpeg" alt="" class="flavor-image">
+                            <span class="flavor-name">Almond Butter</span> 
+                        </label>
+                        <input type="radio" name="flavor" id="Toasted_Coconut_Chip" class="flavor-radio" >
+                        <label for="Toasted_Coconut Chip" class="flavor-label">
+                            <img src="products/Toasted_Coconut Chip.jpeg" alt="" class="flavor-image">
+                            <span class="flavor-name">Toasted Coconut Chip</span> 
+                        </label>
+                        <input type="radio" name="flavor" id="Matcha Chai" class="flavor-radio" >
+                        <label for="Matcha_Chai" class="flavor-label">
+                            <img src="products/Matcha_Chai.jpeg" alt="" class="flavor-image">
+                            <span class="flavor-name">Matcha Chai</span> 
+                        </label>
+                        
+                        
+                        <input type="radio" name="flavor" id="Almond_Butter_Chip" class="flavor-radio" >
+                        <label for="Banana nut" class="flavor-label">
+                            <img src="products/Banana_nut.jpeg" alt="" class="flavor-image">
+                            <span class="flavor-name">Banana nut</span> 
+                        </label>
+                         
+                        <input type="radio" name="flavor" id="Almond Butter Chip" class="flavor-radio" >
+                        <label for="Chocolate_Mint_Chip" class="flavor-label">
+                            <img src="products/Chocolate_Mint_Chip.jpeg" alt="" class="flavor-image">
+                            <span class="flavor-name">Chocolate Mint Chip</span> 
+                        </label>
+
+
+                        
+                    
+                    
+                    </div>
+                     
+                
+                
+                 
+                    <button class="add-to-cart">ADD TO CART</button>
+                </div>
+                
+                
+                
+            </div>
+        
+        
+            <div style="background-color:white;box-shadow: none;" class="faq-container">
+                <h1>Product Feature</h1>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h2>Ingredients</h2>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nuts (Peanuts, Almonds), Prebiotic Blend (Tapioca Fiber, Vegetable Fiber), Protein Blend (Pea Protein Crisps [Pea Protein, Tapioca Starch], Pea Protein), Natural Flavors, Peanut Flour, Coconut Oil, Unsweetened Chocolate, Cocoa, Cocoa Butter, Sea Salt, Lion's Mane, Stevia Plant Extract, Vitamin E</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h2>Diets</h2>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <ul style="padding:0 0 20px 10px;">
+                         <li>Vegan </li>
+                         <li>Gluten Free</li>
+                         <li>Diabetic</li>
+                         
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h2>Allergens</h2>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tree Nuts (Almonds), Peanuts, and Coconuts</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h2>Storage</h2>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Store in a cool, dry place.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h2>Origin</h2>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>United States Of America</p>
+                    </div>
+            </div> 
+             
+             
+
+
+          </div>
+          <div>
+              <img  style="height:120PX;position: relative;left:61% ;margin-top: 18px; position: absolute;" src="Landing_page/Internet_20250203_131945_8.png" alt="">
+          <table>
+              <tbody>
+            <tr> 
+                <th></th>
+                <th class="us">US</th>
+                <th>THEM</th>
+            </tr>
+            
+            <tr>
+                <td>Total Sugars</td>
+                <td class="us">1G</td>
+                <td>15G</td>
+            </tr>
+            <tr>
+                <td>Net Carb</td>
+                <td class="us">3G</td>
+                <td>20G</td>
+            </tr>
+            <tr>
+                <td>Brain Nutrients</td>
+                <td class="us">5</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td> Protein</td>
+                <td class="us">12G <br>(Plant P.)</td>
+                <td>12G<BR>(Animal P.)</td>
+            </tr>
+            <tr>
+                <td>Fiber</td>
+                <td class="us">6G</td>
+                <td>4G</td>
+            </tr>
+            <tr>
+                <td>Calories</td>
+                <td class="us">180</td>
+                <td>210</td>
+            </tr>
+            
+           </tbody>
+        </table>
+          </div>
+            </div>  
+        </main>
+        <div class="last">
+            <div>
+                <img  src="Image/Delivery_Icon_44ee7d55-97ae-46fb-b624-1c57ab9dbb83.png" alt="delivery icon">
+                 <h3>Free delivery<h3>
+                 <p>For order over 50$ </p>
+             </div>
+             <div>
+                 <img src="Image/Money_Icon_1c5dff66-b3ee-4ac7-a756-15474fd5871d.png" alt="money icon">
+                 <h3>Flexible payment</h3>
+                 <p><b> Cash On Delivery or money transfer</b> </p>
+             </div>
+           </div> 
+
+           
+
+        <footer>
+            <div class="footer-content">
+               <div>
+                <h1>good bites</h1>
+                <p > We offer an exclusive selection of healthy, natural foods, supplements, personal care, and homeware products from trusted brands in Lebanon and from around the world that meet all your health, dietary, and lifestyle needs.</p>
+             <a href="mailto:hello@goodbite.com">hello@goodbite.com</a>
+                <p> +961 03 654 876</p>
+            </div>
+              
+              
+                <div>
+                    <ul>
+                        <h3>Qick link</h3>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">shope</a></li>
+                        <li><a href="Contact-us.html">contact us</a></li>
+                        <li><a href="index.html">about us</a></li>
+                    </ul>
+                </div>
+                <div> 
+                    <ul>                                                             
+                        <h3>more</h3>
+                        <li><a href="#">delivery & payment</a></li>
+                        <li><a href="index.html">FAQs</a></li>
+                    </ul>
+                </div>
+              
+              <div>
+                <ul class="socail ">
+                    <li><a href=""><img style="width: 30px;height: 30px;"src="Image/instagram-2.png" alt="instagram"></a></li>
+                    <li><a href=""><img style="width: 30px;height: 30px;"src="Image/facebook-2.png" alt="facebook"></a></li>
+                
+                </ul>
+              </div>
+        
+            </div>
+             <div class="copyright" >
+                 <p >&copy;2025 good bites</p>
+        
+             </div>
+             </footer>
+        
+        <script src="script.js"></script>
+</body>
+</html>

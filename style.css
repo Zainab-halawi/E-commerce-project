@@ -1,0 +1,464 @@
+.calistoga-regular {
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+  .roboto-text {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+  .caveat-handwritten {
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+  }
+    
+  
+  @keyframes slideup{
+    from{transform:scale(0) ;}
+    to {transform:scale(1) ;}
+  }
+
+ .slide-up{
+    animation: slideup 0.7s ease-out;  
+
+ }
+  
+* {  margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+    box-sizing: border-box;
+    }
+     body{
+        
+        margin-top: 90px;
+        background: #f8fafc;
+     }
+    body main {
+        min-width: 100px;
+    
+        color: #3a3e46;
+        padding:8px 24px;
+    }
+
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(200px, auto);
+        gap: 1rem; 
+        
+    }
+    
+    .item {
+          
+        position: relative;
+        background: white;
+        border-radius: 24px;
+        padding: 32px;
+        box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        border: 1px solid #e2e8f0;
+    
+    }
+
+    .item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.11);
+
+
+    }
+
+    .main-photo {
+        grid-column: span 2;
+        grid-row: span 2;
+        background-image: url(Image/IQBARMatchaChaiProteinBar_5.jpg);
+        background-position: center;
+        background-size: cover;
+        color: white;
+    
+    }
+
+
+
+    .tall { 
+        grid-row: span 2;
+    }
+
+    .header { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        top: 0; 
+        left: 0; 
+        padding: 0 20px;
+        background-color: #ffffff;
+        position: fixed; 
+        z-index: 100; 
+        width: 100%;
+        height: 10%;
+        box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.1);
+        
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+
+        
+        
+    
+    }
+
+    .header h1 {
+        font-family: "Calistoga", serif;
+        font-size: 40px;
+        font-weight: 500;
+        color: #0f7432;
+        margin-left: 1.5rem;
+        max-height:60px;
+    }
+
+    .nav {
+        
+        display: flex;
+        gap : 4rem;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: #3a3e46;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        padding: 0.5rem 1rem;
+
+    }
+
+    .nav-link:hover {
+        color:white;
+        border-radius: 16px;
+        background-color:#0f7432;
+    }
+
+    
+
+     .item h2 { 
+        font-weight: 900;
+        font-size:1.5rem;
+        margin-bottom: 1rem;
+    }
+
+     p {   font-size:large;
+        color: #64748b;
+        line-height: 1.6;
+        
+    }
+    .main-photo h2{
+        font-size: 3.5rem;
+        margin-top: 1rem;
+
+        
+    }
+    
+    
+    
+    
+    
+    .first-button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: #f59138;
+        border-radius: 12px;
+        color: white;
+        text-decoration: none;
+        margin-top: 3rem;
+        transition: all 0.3s ease;
+    }
+    
+    .first-button:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .inner-image{
+        
+        width: 100%;
+        height: 150px;
+        background-image:url(Image/Bragg_Brand_Cover_Photo.jpg);
+        background-position:center ;
+        background-repeat: no-repeat;
+        background-size:cover;
+        border-radius: 12px;
+        margin-top: 0.5rem;
+    }
+    .fill-image{
+        background-image:url("Image/logo.jpg");
+        background-position:center ;
+        background-repeat: no-repeat;
+        background-size:cover;
+        
+    }
+    .top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 32px 20px 16px;
+        font-family: "Calistoga", serif;
+    }
+    .left-btn{
+         display: inline-block;
+         padding: 0.75rem 1.5rem;
+        background: #3a3e46;
+        border-radius: 12px;
+        color:white;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+    .left-btn:hover{
+        background-color:white ;
+        color: #3a3e46;
+        border: 1px solid #3a3e46;
+        margin-bottom: 8px;
+    }
+    .category{
+        width: 180px;
+        height: auto;
+        object-fit: cover;
+        
+        object-position: center;
+        
+    }
+    
+
+    .card{
+        width: 312px;
+        height: auto;
+        padding: 16px;
+        background-color: white;
+        border-radius:24 px;
+    
+        
+    }
+    .product-image{
+        width: 280px;
+        height: auto;
+        cursor: pointer;
+        
+        background-position:center;
+        background-size: cover;
+        border-radius: 16px;
+        margin-bottom: 12px;
+
+    }
+
+    .product-tittle{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        padding: 12px;
+        text-align: left;
+    }
+    .product-description{
+        font-size: 15px;
+        margin-bottom: 16px ;
+        text-align: left;
+    }
+    .details-button{
+        display: inline-block;
+        cursor: pointer;
+       
+       font-size: 16px;
+       font-weight: 500;
+       text-align: center;
+       text-decoration: none;
+
+       background-color: white;
+       color:#3a3e46;
+
+        border: 1px solid #3a3e46   ;
+        border-radius: 8px;
+        width:210px ;
+        padding: 12px  ;
+        transition: all 0.3 ease;
+    }
+    .details-button:hover{
+        color: white;
+        background-color:#9ac86e;
+        border-color: #9ac86e;
+    }
+    .faq-container{
+        background-color: white;
+        border-radius: 24px;
+        width: 50%;
+        padding: 30px;
+        box-shadow: 0 4px 6px 1px rgba(0, 0, 0, 0.11);
+        margin-top:20px;
+        
+    }
+    .faq-container h1 {
+        padding-bottom: 20px;    
+        text-align: center;
+        margin: 20px 0;
+        color:#3a3e46;
+    }
+
+    .faq-item {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 16px;
+        
+    }
+    
+    .faq-question {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .faq-question h2 {
+        margin: 0;
+        color:#3a3e46;
+        font-size: 1.1rem;
+        
+        padding-right: 15px;
+    }
+
+    .faq-toggle {
+        font-size: 20px;
+        color: #0f7432;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+    .faq-answer {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    
+    .faq-answer p {
+        margin-bottom: 20px;
+        color: #64748b;
+        line-height: 1.6;
+    }
+
+    .faq-item.active .faq-answer {
+        max-height: 500px;
+    }
+
+    .faq-item.active .faq-toggle {
+        transform: rotate(45deg);
+    }
+
+    
+    .faq-item:hover .faq-question h2 {
+        color: #000;
+    }
+
+    .left-image{
+        float: right;
+        width:47%;
+        height: 680px; 
+        background-image: url(Image/public.jpeg);     
+        
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+        border-radius: 24px;
+        display: block;
+        padding: 16px;
+        margin-top: 20px; 
+        margin-left: 15px;     
+}
+.glass{
+    background: rgba(10, 10, 10, 0.192);
+    padding: 0.5rem 1.5rem;
+    border-radius: 16px;
+    font-size: 1.25rem;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 8px;
+    overflow: hidden;
+}
+.glass h2{
+    
+    padding: 12px 0px;}
+  
+ .last{
+    
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ } 
+ .last img{
+   margin: 0 60px;  
+    width: 130px;
+ } 
+
+
+footer{
+
+font-size: medium;
+color: #ffffff;
+background-color: #000;
+padding: 20px 5%;
+border-top:5px solid #0f7432;
+border-top-left-radius: 16px;
+border-top-right-radius: 16px;
+
+} 
+footer p{
+    font-size: small;
+}
+
+
+.footer-content {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.footer-content h4 {
+    margin-bottom: 1rem;
+}
+
+.footer-content ul {
+    list-style: none;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.8;
+    font-size: small;
+} 
+.socail {
+    display: flex;
+    justify-content: center;
+    gap:1rem ;
+    padding-top: 20px;
+
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 1rem ;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
